@@ -9,7 +9,7 @@ Restart=always
 RestartSec=1
 User=pi
 WorkingDirectory=/home/pi
-ExecStart=/usr/bin/xinit /usr/bin/chromium-browser --kiosk --disable-restore-session-state http://localhost/ --start-maximized --window-position=0,0 --window-size=960,540 --force-device-scale-factor=2.05 --disable-pinch --use-mobile-user-agent --user-agent="Mozilla/5.0 (iPad; CPU OS 13_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0 Mobile/15E148 Safari/604.1" --hide-scrollbars
+ExecStart=/usr/bin/xinit /home/pi/klipper_config/mainsail.sh
 
 [Install]
 WantedBy=multi-user.target
