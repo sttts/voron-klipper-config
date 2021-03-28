@@ -6,7 +6,7 @@ After=network.target
 Type=oneshot
 RemainAfterExit=yes
 ExecStart=/bin/true
-ExecStop=/usr/bin/curl -v "http://voron-power/cm?cmnd=Backlog%%20Delay%%2030%%3BPower1%%20off"
+ExecStop=/usr/bin/curl -v "http://voron-power/cm?cmnd=Backlog%%20Delay%%2040%%3BPower1%%20off"
 
 [Install]
 WantedBy=multi-user.target
